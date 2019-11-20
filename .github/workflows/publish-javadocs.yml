@@ -15,5 +15,7 @@ jobs:
     - uses: actions/setup-java@v1
       with:
         java-version: "11.0.5"
+    - name: Print Env
+      run: env
     - name: Generate JavaDocs
       run: ./mvnw clean compile javadoc:aggregate
